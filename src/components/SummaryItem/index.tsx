@@ -16,7 +16,14 @@ export function SummaryItem({img, title, total, typeContainer} : SummaryItemProp
                 <p>{title}</p>
                 <img src={img} alt="Entradas" />
             </header>
-            <strong>{`R$${total.toFixed(2)}`}</strong>
+            <strong>
+                {
+                    new Intl.NumberFormat('pt-BR', {
+                        style:'currency',
+                        currency:'BRL'
+                    }).format( total)
+                }
+            </strong>
         </Container>
     );
 }

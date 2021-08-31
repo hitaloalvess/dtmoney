@@ -27,7 +27,7 @@ createServer({
           type: 'withdraw',
           category: 'Casa',
           amount: 1000,
-          createdAt: new Date()
+          createdAt: `${new Date()}`
         }
       ]
     })
@@ -41,7 +41,12 @@ createServer({
     })
 
     this.post('transactions', (schema, request) => {
-      const data = JSON.parse(request.requestBody)
+      const req = JSON.parse(request.requestBody)
+
+      const data = {
+        ...req,
+        createdAt: new Date()
+      }
 
       return schema.create('transactions', data);
     })
