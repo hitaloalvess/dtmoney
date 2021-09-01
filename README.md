@@ -26,7 +26,11 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O dtmoney é um projeto desenvolvido para o gerenciamento de finanças do usuário, o software busca administrar suas entradas e saídas, de modo a calcular os valores totais de ambas, e gerar um balanço final de suas finanças, de maneira a demonstrar assim quanto o usuário gastou, ganhou e ainda possui em caixa.
+O dtmoney é um projeto desenvolvido para o gerenciamento de finanças do usuário, o software busca administrar transações de entradas e saídas, de modo a calcular os valores totais de ambas, e gerar um balanço final de suas finanças, de maneira a demonstrar assim quanto o usuário gastou, ganhou e ainda possui em caixa.
+Funcinalidades disponíveis:
+- Cadastrar transação de entrada
+- Cadastrar transação de saída
+- Visualizar saldo total de entrada, saída e caixa atual
 
 ## ⌨ Como usar?
 
@@ -44,6 +48,9 @@ yarn install
 # Iniciando projeto
 yarn start
 ```
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy)?node-id=0%3A1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: License
 
