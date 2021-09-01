@@ -1,5 +1,6 @@
 <h1 align="center">
   <img alt="logo dtmoney" title="dtmoney" src=".github/logo.png" width="400px" />
+  <p>dtmoney</p>
 </h1>
 
 <!-- <p align="center">
