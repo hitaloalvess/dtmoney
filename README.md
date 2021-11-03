@@ -2,9 +2,9 @@
   <img alt="logo dtmoney" title="dtmoney" src=".github/logo.png" width="400px" />
 </h1>
 
-<!-- <p align="center">
-     <img src="" alt="dtmoney demo" />
-</p> -->
+<p align="center">
+     <img src="./github/preview.gif" alt="dtmoney demo" />
+</p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
