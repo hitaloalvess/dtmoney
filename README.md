@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-     <img src="./github/preview.gif" alt="dtmoney demo" />
+     <img src=".github/preview.gif" alt="dtmoney demo" />
 </p>
 
 <p align="center">
