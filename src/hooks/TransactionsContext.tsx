@@ -2,7 +2,7 @@ import { createContext, ReactNode, useContext, useEffect, useState } from 'react
 import { api } from '../services/api';
 
 interface Transaction{
-    id:number,
+    _id:number,
     title: string;
     type:string;
     amount: number;
@@ -10,7 +10,7 @@ interface Transaction{
     createdAt: string;
 }
 
-type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>
+type TransactionInput = Omit<Transaction, '_id' | 'createdAt'>
 
 interface TransactionProviderProps{
     children: ReactNode;
@@ -29,7 +29,9 @@ export function TransactionsProvider({children} : TransactionProviderProps){
     
     useEffect( () => {
         api('/transactions')
-             .then(response => setTransactions(response.data.transactions))
+             .then(response => {
+                setTransactions(response.data)
+             })
     }, []);
 
     async function createTransaction(transactionInput : TransactionInput){
@@ -37,7 +39,7 @@ export function TransactionsProvider({children} : TransactionProviderProps){
 
         setTransactions([
             ...transactions,
-            resp.data.transactions
+            resp.data.transaction
         ])
     }
     

@@ -12,7 +12,7 @@ export function Summary(){
 
     const { transactions } = useTransaction();
 
-    const summary = transactions.reduce((acc, transaction) => {
+    const summary = transactions?.reduce((acc, transaction) => {
 
         if(transaction.type === 'deposit'){
             acc.deposit += transaction.amount;
@@ -33,15 +33,15 @@ export function Summary(){
         <Container>
             <SummaryItem img={incomeImg}
                          title="Entradas"
-                         total={summary.deposit}/>
+                         total={summary?.deposit}/>
 
             <SummaryItem img={outcomeImg}
                          title="Saídas"
-                         total={-summary.withdraw}/>
+                         total={-summary?.withdraw}/>
 
             <SummaryItem typeContainer="highlight-background" img={totalImg}
                          title="Total"
-                         total={summary.total}/>
+                         total={summary?.total}/>
         </Container>
     );
 }

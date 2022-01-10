@@ -20,9 +20,9 @@ export function TransactionTable(){
                 </thead>
                 <tbody>
                 {
-                   transactions.map(( transaction ) => {
+                   transactions && transactions.map(( transaction ) => {
                         return (
-                                <tr key={transaction.id}>
+                                <tr key={transaction._id}>
                                     <td>{transaction.title}</td>
                                     <td className={transaction.type} >
                                         {new Intl.NumberFormat('pt-BR', {
